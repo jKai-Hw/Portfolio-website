@@ -38,13 +38,13 @@
                                 <div class="skill">HTML</div>
                                 <div class="skill">CSS</div>
                                 <div class="skill">Bootstrap</div>
+                                <div class="skill">Responsive</div>
                                 <div class="skill">JavaScript</div>
                                 <div class="skill">Vue.js</div>
                                 <div class="skill">Vuetify</div>
                                 <div class="skill">Java</div>
                                 <div class="skill">Git</div>
                                 <div class="skill">GitHub</div>
-                                <div class="skill">Responsive Design</div>
                             </div>
                         </v-col>
                     </v-row>

@@ -12,9 +12,9 @@
                 <v-row v-for="portfolio in portfolios" :key=portfolio.name
                     class="projects__row mt-0 mx-0 justify-space-between align-center">
                     <v-col cols="12" md="6" class="pa-0">
-                        <v-carousel height="400" show-arrows-on-hover>
-                            <v-carousel-item v-for="img, i in portfolio.imgList" :key="i" :src="img">
-                                <!-- <v-img :src="img"></v-img> -->
+                        <v-carousel show-arrows-on-hover class="carousel grey darken-1">
+                            <v-carousel-item v-for="img, i in portfolio.imgList" :key="i">
+                                <v-img :src="img" style="height:auto;"></v-img>
                             </v-carousel-item>
                         </v-carousel>
                     </v-col>
@@ -39,9 +39,9 @@
             <v-container class="pa-0">
                 <v-row class="projects__row mt-0 mx-0 justify-space-between align-center">
                     <v-col cols="12" md="6" class="pa-0">
-                        <v-carousel height="400" show-arrows-on-hover>
-                            <v-carousel-item>
-                                <!-- <v-img :src="img"></v-img> -->
+                        <v-carousel show-arrows-on-hover class="carousel grey darken-1">
+                            <v-carousel-item v-for="img, i in otherPFimgList" :key="i">
+                                <v-img :src="img" style="height:auto;"></v-img>
                             </v-carousel-item>
                         </v-carousel>
                     </v-col>
@@ -72,23 +72,16 @@ export default {
     data() {
         return {
             portfolios: [
-                new Portfolio('Chat App', ["https://liginc.co.jp/wp-content/uploads/2015/05/797.png", '../assets/portfolioImg/chat-app/chat-home.png', '../assets/portfolioImg/chat-app/chat-chat.png', '../assets/portfolioImg/chat-app/chat-detail.png', '../assets/portfolioImg/chat-app/chat-talk.png', '../assets/portfolioImg/chat-app/talk-mini.png',], 'オンラインで相手を探してメッセージのやり取りができるSPAアプリです。Vue.jsの学習のアウトプットとして作成しました。トーク履歴に新しく話した人順に表示するようにしたり、getterやsetterを用いたVuexの状態管理で堅牢に管理できるように工夫しました。', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/" target="_blank">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/" target="_blank">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
+                new Portfolio('Chat App', ['https://user-images.githubusercontent.com/75964449/203824756-680569a9-868c-4cd6-bb73-7ed79b601ca2.png', 'https://user-images.githubusercontent.com/75964449/203824936-4f81941f-3b13-4a24-b565-b66b6ad39ad4.png', 'https://user-images.githubusercontent.com/75964449/203825049-32454f78-260b-4453-99e5-89e2f14f8f3f.png', 'https://user-images.githubusercontent.com/75964449/203825140-cbbb4839-ea84-471e-99b3-b3e14123f778.png', 'https://user-images.githubusercontent.com/75964449/203825171-c9e3d321-b57b-4716-b896-3a1425eb3878.png',], 'オンラインで相手を探してメッセージのやり取りができるSPAアプリです。Vue.jsの学習のアウトプットとして作成しました。トーク履歴に新しく話した人順に表示するようにしたり、getterやsetterを用いたVuexの状態管理で堅牢に管理できるように工夫しました。', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/" target="_blank">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/" target="_blank">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
                 new Portfolio('Recursionガチャ！ガチャ！', ['imgList'], `Recursionコミュニティ内の初心者用チーム開発(Gitのチームでの使い方をマスターするのが主な目的の開発です)の成果物です。<br>コミュニティに入って間もないユーザーに、メンターやイベント企画者などを紹介するのを目的の一つとして作成しました。おもしろ要素を入れたり、結果をツイートできるようにしてコミュニティ内で<a href="https://twitter.com/hashtag/Recursion%E3%82%AC%E3%83%81%E3%83%A3?src=hashtag_click"  target="_blank">プチバズリ</a>することができました。`, `JavaScript, Bootstrap`, 'https://recursion-teamdev-green.github.io/project/', 'https://github.com/recursion-teamdev-green/project'),
                 // new Portfolio('Other portfolios', imgList, description, Technologies, pagesUrl, readmeUrl),
             ],
-            colors: [
-                'indigo',
-                'warning',
-                'pink darken-2',
-                'red lighten-1',
-                'deep-purple accent-4',
-            ],
-            slides: [
-                'First',
-                'Second',
-                'Third',
-                'Fourth',
-                'Fifth',
+            otherPFimgList: [
+                'https://user-images.githubusercontent.com/75964449/203824756-680569a9-868c-4cd6-bb73-7ed79b601ca2.png',
+                'https://user-images.githubusercontent.com/75964449/203824936-4f81941f-3b13-4a24-b565-b66b6ad39ad4.png',
+                'https://user-images.githubusercontent.com/75964449/203825049-32454f78-260b-4453-99e5-89e2f14f8f3f.png',
+                'https://user-images.githubusercontent.com/75964449/203825140-cbbb4839-ea84-471e-99b3-b3e14123f778.png',
+                'https://user-images.githubusercontent.com/75964449/203825171-c9e3d321-b57b-4716-b896-3a1425eb3878.png',
             ],
         }
     },
@@ -141,16 +134,21 @@ export default {
     font-size: 1.125rem;
 }
 
-@media only screen and (min-width: 37.5rem
+.carousel {
+    height: 20.3125rem !important;
+}
 
-    /* sm=600px */
-) {
+@media only screen and (min-width: 37.5rem/* sm=600px */) {
     .portfolio__row-content-title {
         font-size: 1.625rem;
     }
 
     .project__row-content-technologies {
         font-size: 1.375rem;
+    }
+
+    .carousel {
+        height: 31.25rem !important;
     }
 }
 
@@ -165,6 +163,10 @@ export default {
     .project__row-content-desc {
         font-size: 1.125rem;
     }
+
+    .carousel {
+        height: 17.1875rem !important;
+    }
 }
 
 @media only screen and (min-width: 79rem
@@ -173,6 +175,19 @@ export default {
 ) {
     .portfolio__row-content-title {
         font-size: 1.75rem;
+    }
+
+    .carousel {
+        height: 21.875rem !important;
+    }
+}
+
+@media only screen and (min-width: 99rem
+
+    /* 1584px<x<1904 */
+) {
+    .carousel {
+        height: 35rem !important;
     }
 }
 </style>
