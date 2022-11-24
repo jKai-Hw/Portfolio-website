@@ -72,7 +72,7 @@ export default {
     data() {
         return {
             portfolios: [
-                new Portfolio('Chat App', ["https://liginc.co.jp/wp-content/uploads/2015/05/797.png", ], 'オンラインで相手を探してメッセージのやり取りができるSPAアプリです。Vue.jsの学習のアウトプットとして作成しました。トーク履歴に新しく話した人順に表示するようにしたり、getterやsetterを用いたVuexの状態管理で堅牢に管理できるように工夫しました。', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
+                new Portfolio('Chat App', ["https://liginc.co.jp/wp-content/uploads/2015/05/797.png", '../assets/portfolioImg/chat-app/chat-home.png', '../assets/portfolioImg/chat-app/chat-chat.png', '../assets/portfolioImg/chat-app/chat-detail.png', '../assets/portfolioImg/chat-app/chat-talk.png', '../assets/portfolioImg/chat-app/talk-mini.png',], 'オンラインで相手を探してメッセージのやり取りができるSPAアプリです。Vue.jsの学習のアウトプットとして作成しました。トーク履歴に新しく話した人順に表示するようにしたり、getterやsetterを用いたVuexの状態管理で堅牢に管理できるように工夫しました。', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/" target="_blank">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/" target="_blank">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
                 new Portfolio('Recursionガチャ！ガチャ！', ['imgList'], `Recursionコミュニティ内の初心者用チーム開発(Gitのチームでの使い方をマスターするのが主な目的の開発です)の成果物です。<br>コミュニティに入って間もないユーザーに、メンターやイベント企画者などを紹介するのを目的の一つとして作成しました。おもしろ要素を入れたり、結果をツイートできるようにしてコミュニティ内で<a href="https://twitter.com/hashtag/Recursion%E3%82%AC%E3%83%81%E3%83%A3?src=hashtag_click"  target="_blank">プチバズリ</a>することができました。`, `JavaScript, Bootstrap`, 'https://recursion-teamdev-green.github.io/project/', 'https://github.com/recursion-teamdev-green/project'),
                 // new Portfolio('Other portfolios', imgList, description, Technologies, pagesUrl, readmeUrl),
             ],
@@ -93,7 +93,7 @@ export default {
         }
     },
 
-            // '../assets/portfolioImg/chat-app/chat-home.PNG', '../assets/portfolioImg/chat-app/chat-chat.PNG', '../assets/portfolioImg/chat-app/chat-detail.PNG', '../assets/portfolioImg/chat-app/chat-talk.PNG', '../assets/portfolioImg/chat-app/talk-mini.PNG',
+
 }
 </script>
 

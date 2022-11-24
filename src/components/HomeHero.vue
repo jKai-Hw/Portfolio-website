@@ -140,13 +140,26 @@ export default {
     height: 5px;
     position: absolute;
     top: 7px;
-    left: 50%;
+    left: 41%;
     transform: translateX(-50%);
     background-color: #333;
     border-radius: 50%;
     opacity: 1;
-    animation: wheel 1.3s infinite;
-    -webkit-animation: wheel 1.3s infinite;
+    /* animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite; */
+    animation-duration: 2.3s;
+    animation-name: top-to-bottom;
+    animation-iteration-count: infinite;
+}
+@keyframes top-to-bottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: .1;
+        transform: translateY(18px);
+    }
 }
 
 

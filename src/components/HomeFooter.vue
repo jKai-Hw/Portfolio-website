@@ -7,7 +7,7 @@
                         <v-card-subtitle class="footer-subtitle f-SSP  font-weight-bold pa-0 ms-2">SOCIAL
                         </v-card-subtitle>
                         <v-card-text class="pa-0 mt-3 mt-sm-5  d-flex justify-start">
-                            <v-btn v-for="icon in icons" :key="icon" class="ma-0 white--text" icon :href="icon.url"
+                            <v-btn v-for="icon in icons" :key="icon.icon" class="ma-0 white--text" icon :href="icon.url"
                                 target="_blank">
                                 <v-icon>
                                     {{ icon.icon }}

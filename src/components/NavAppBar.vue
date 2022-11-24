@@ -33,7 +33,7 @@
         <v-navigation-drawer v-model="drawer" app right hide-overlay temporary>
             <v-list nav dense>
                 <v-list-item-group v-model="group" v-for="(link, i) in links" :key="i">
-                    <v-list-item @click="$vuetify.goTo(link.target)" ripple="false">
+                    <v-list-item @click="$vuetify.goTo(link.target)" :ripple="false">
                         <v-list-item-title class="text-right mr-4">{{ link.text }}</v-list-item-title>
                     </v-list-item>
 
