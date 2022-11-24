@@ -1,32 +1,40 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app id="app">
+    <v-main>
+      <NavAppBar />
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
+<script>
+import NavAppBar from "@/components/NavAppBar";
+
+export default {
+  name: 'App',
+  data: () => ({
+    //13.11X=10
+  }),
+  components: {
+    NavAppBar,
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+
+.f-SSP {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav {
-  padding: 30px;
+.f-NSJ {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.f-black {
+  color: #333333;
 }
 </style>

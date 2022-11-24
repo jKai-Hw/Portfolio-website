@@ -1,18 +1,39 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+
+    <HomeHero />
+    <HomeAbout />
+    <HomePortfolio />
+    <HomeContact />
+    <HomeFooter />
+
+
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeHero from "@/components/HomeHero";
+import HomeAbout from "@/components/HomeAbout.vue";
+import HomePortfolio from "@/components/HomePortfolio.vue";
+import HomeContact from "@/components/HomeContact.vue";
+import HomeFooter from "@/components/HomeFooter.vue";
 
 export default {
   name: 'HomeView',
+
   components: {
-    HelloWorld
+    HomeHero,
+    HomeAbout,
+    HomePortfolio,
+    HomeContact,
+    HomeFooter,
   }
 }
 </script>
+
+<style>
+/* eslint-disable */
+#title {
+  color: #014099;
+}
+</style>
