@@ -16,7 +16,7 @@
                             </div>
                             <div class="f-NSJ font-weight-regular">
                                 <p class="">現在<a
-                                        href="https://recursionist.io/">Recursion</a>という米国大学のコンピュータサイエンスの教材を参考にした学習プラットフォームで、CSを学んでいる23歳です。JavaScriptとJavaで学習を進めています。最近Vue.jsを用いていくつかWebアプリケーションを作成しました。<strong>Portfolios</strong>セクションでご覧いただけます。
+                                        href="https://recursionist.io/" target="_blank">Recursion</a>という米国大学のコンピュータサイエンスの教材を参考にした学習プラットフォームで、CSを学んでいる23歳です。JavaScriptとJavaで学習を進めています。最近Vue.jsを用いていくつかWebアプリケーションを作成しました。<strong>Portfolios</strong>セクションでご覧いただけます。
                                 </p>
 
                                 <p>前職は電気工事士。モノづくりが好きなことと、ITの技術に惹かれ、エンジニアを目指して学習中です。</p>

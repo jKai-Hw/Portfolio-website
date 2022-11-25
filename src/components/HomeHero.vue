@@ -4,8 +4,8 @@
         <v-container fluid class="home-hero__content ">
             <v-row>
                 <v-col class="d-flex flex-column justify-space-around align-center text-center">
-                    <!-- <h1 class="home-hero__title font-weight-bold ">HEY, I'M KAI HOSHINO</h1> -->
-                    <h1 class="home-hero__title font-weight-bold ">未完成です</h1>
+                    <h1 class="home-hero__title font-weight-bold ">HEY, I'M KAI HOSHINO</h1>
+                    <!-- <h1 class="home-hero__title font-weight-bold ">未完成です</h1> -->
                     <div class="home-hero__info mx-auto  mt-6">
                         <p class="home-hero__subtitle f-black ma-0">Studying computer science to become an engineer.
                             Currently using JavaScript, Vue.js and Java. Take a look at my portfolio!</p>
