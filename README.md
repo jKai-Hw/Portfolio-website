@@ -9,7 +9,7 @@
 https://jkai-hw.github.io/portfolio-website/
 
 ## Description
-私のポートフォリオのご覧いただけます。コンタクトページ(Google Forms)のリンクもございます。
+私のポートフォリオをご覧いただけます。コンタクトページ(Google Forms)のリンクもございます。
 
 ## Project setup
 ```
