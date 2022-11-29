@@ -137,6 +137,13 @@ export default {
     height: 20.3125rem !important;
 }
 
+@media only screen and (max-width: 28.125rem/* 450px */) {
+
+    .carousel {
+        height: 16.25rem !important;
+    }
+}
+
 @media only screen and (min-width: 37.5rem/* sm=600px */) {
     .portfolio__row-content-title {
         font-size: 1.625rem;
@@ -147,7 +154,7 @@ export default {
     }
 
     .carousel {
-        height: 31.25rem !important;
+        height: 28.125rem !important;
     }
 }
 
