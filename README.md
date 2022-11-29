@@ -1,4 +1,15 @@
 # portfolio-website
+私のポートフォリオサイトです。
+
+## Technologies
+- Vue CLI
+- Vuetify
+
+## URL
+https://jkai-hw.github.io/portfolio-website/
+
+## Description
+私のポートフォリオをご覧いただけます。コンタクトページ(Google Forms)のリンクもございます。
 
 ## Project setup
 ```
