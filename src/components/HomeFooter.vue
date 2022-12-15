@@ -47,9 +47,6 @@ export default {
             { icon: 'mdi-github', url: 'https://github.com/jKai-Hw' },
             { icon: 'icon-Wantedly_Wht', url: 'https://www.wantedly.com/id/hoshino_kai_' },
             { icon: 'mdi-twitter', url: 'https://twitter.com/OiLactee' },
-
-
-
         ],
     }),
 }

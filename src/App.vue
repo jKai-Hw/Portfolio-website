@@ -37,4 +37,8 @@ export default {
 .f-black {
   color: #333333;
 }
+
+.indent {
+  text-indent: 1rem;
+}
 </style>

@@ -30,15 +30,30 @@
             <!-- </v-container> -->
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" app right hide-overlay temporary>
-            <v-list nav dense>
-                <v-list-item-group v-model="group" v-for="(link, i) in links" :key="i">
-                    <v-list-item @click="$vuetify.goTo(link.target)" :ripple="false">
-                        <v-list-item-title class="text-right mr-4">{{ link.text }}</v-list-item-title>
-                    </v-list-item>
+        <v-navigation-drawer v-model="drawer" app right hide-overlay temporary >
+            <div class="d-flex flex-column justify-between h-100per">
+                <v-list nav dense class="pt-5">
+                    <v-list-item-group v-model="group" v-for="(link, i) in links" :key="i">
+                        <v-list-item @click="$vuetify.goTo(link.target)" :ripple="false">
+                            <v-list-item-title class="text-right mr-4">{{ link.text }}</v-list-item-title>
+                        </v-list-item>
 
-                </v-list-item-group>
-            </v-list>
+                    </v-list-item-group>
+                </v-list>
+                <v-spacer></v-spacer>
+                <div class="pb-5 pe-5 d-flex justify-end">
+                    <v-btn large color="#facf0f" class="font-weight-bold"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSefgKMArXUaU3AhK2bGnLVjYBu5bUvN-yIBGVaf9i6F0UKXBA/viewform"
+                        target="_blank">CONTACT</v-btn>
+                </div>
+                <div class="pb-5 pe-5 d-flex justify-end">
+                    <v-btn v-for="icon in icons" :key="icon.icon" class="ma-0 black--text ms-2" icon :href="icon.url" target="_blank">
+                        <v-icon large>
+                            {{ icon.icon }}
+                        </v-icon>
+                    </v-btn>
+                </div>
+            </div>
         </v-navigation-drawer>
     </nav>
 </template>
@@ -53,6 +68,11 @@ export default {
             { text: 'About me', target: '#about', },
             { text: 'Portfolio', target: '#portfolio', },
             { text: 'Contact', target: '#contact', },
+        ],
+        icons: [
+            { icon: 'mdi-github', url: 'https://github.com/jKai-Hw' },
+            { icon: 'icon-Wantedly_Blk', url: 'https://www.wantedly.com/id/hoshino_kai_' },
+            { icon: 'mdi-twitter', url: 'https://twitter.com/OiLactee' },
         ],
     }),
 }
@@ -70,5 +90,8 @@ export default {
 
 .f-weight-700 {
     font-weight: 700;
+}
+.h-100per {
+    height: 100%;
 }
 </style>

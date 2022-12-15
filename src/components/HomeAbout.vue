@@ -15,13 +15,15 @@
                                 <h3 class="about__content-title  font-weight-bold f-black mb-8">Get to know me!</h3>
                             </div>
                             <div class="f-NSJ font-weight-regular">
-                                <p class="">現在<a
-                                        href="https://recursionist.io/" target="_blank">Recursion</a>という米国大学のコンピュータサイエンスの教材を参考にした学習プラットフォームで、CSを学んでいる23歳です。JavaScriptとJavaで学習を進めています。最近Vue.jsを用いていくつかWebアプリケーションを作成しました。<strong>Portfolios</strong>セクションでご覧いただけます。
+                                <p class="indent">ソフトウェア開発には基礎的な知識を身に着けることが必要だと考え、<a href="https://recursionist.io/" target="_blank">Recursion</a>という米国大学のコンピュータサイエンスの教材を参考にしたプラットフォームで学習している23歳です。</p>
+                                <p class="indent">今までに、データ, 関数や制御フローの基礎、リスト(配列、ハッシュマップ）、抽象化、オブジェクト、アルゴリズム（再帰、末尾再帰、分割統治法、動的計画法）などを学習し、アウトプットとしてコーディング問題（160問以上）に取り組んできました。動的型付け言語のJavaScriptと、静的型付け言語のJavaで学習を進めています。学習してきた中で、計算量を常に意識したり、リーダブルなコードにするように心がけてきました。
                                 </p>
 
-                                <p>前職は電気工事士。モノづくりが好きなことと、ITの技術に惹かれ、エンジニアを目指して学習中です。</p>
+                                <p class="indent">Vue.jsなどを用いていくつかWebアプリケーションも作成しました。<strong>Portfolios</strong>セクションでご覧いただけます。また、それ以外にもGoogle Apps Scriptを用いて業務改善をするなど学んだ知識を活かすことができています。</p>
 
-                                <p class="about__content-details-para">
+                                <p class="indent">前職は電気工事士。モノづくりが好きなことと、ITの技術に惹かれ、エンジニアを目指して学習中です。</p>
+
+                                <p class="about__content-details-para indent">
                                     自分が貢献し、学び、成長できるように働けるよう、日々努力していきたいと思っております。もしご質問等がございましたら、遠慮なくご連絡ください。</p>
                             </div>
                             <div class="mb-">

@@ -20,7 +20,7 @@
                     </v-col>
                     <v-col cols="12" md="5" class="pa-0 mt-10 mt-md-0 ">
                         <h3 class="portfolio__row-content-title font-weight-bold mb-3 ">{{ portfolio.name }}</h3>
-                        <p class="project__row-content-desc f-NSJ mb-6" v-html="portfolio.description"></p>
+                        <div class="project__row-content-desc text-left f-NSJ mb-6 indent " v-html="portfolio.description"></div>
                         <h4 class="project__row-content-technologies mb-1">technologies</h4>
                         <p class="project__row-content-desc f-NSJ" v-html="portfolio.Technologies"></p>
                         <v-row class="mt-5 mt-md-8 mb-0 mx-0">
@@ -47,7 +47,7 @@
                     </v-col>
                     <v-col cols="12" md="5" class="pa-0 mt-10 mt-md-0">
                         <h3 class="portfolio__row-content-title font-weight-bold mb-3 ">Other portfolios</h3>
-                        <p class="project__row-content-desc f-NSJ mb-6">
+                        <p class="project__row-content-desc text-left indent f-NSJ mb-6">
                             上記ほかにも、JavaScriptやVue.jsの学習のために10個ほどアプリケーションを作成しました。いくつかはGitHubで公開しておりますので、よろしければご覧ください。
                         </p>
                         <h4 class="project__row-content-technologies mb-1">technologies</h4>
@@ -72,8 +72,11 @@ export default {
     data() {
         return {
             portfolios: [
-                new Portfolio('Chat App', ['https://user-images.githubusercontent.com/75964449/203824756-680569a9-868c-4cd6-bb73-7ed79b601ca2.png', 'https://user-images.githubusercontent.com/75964449/203824936-4f81941f-3b13-4a24-b565-b66b6ad39ad4.png', 'https://user-images.githubusercontent.com/75964449/203825049-32454f78-260b-4453-99e5-89e2f14f8f3f.png', 'https://user-images.githubusercontent.com/75964449/203825140-cbbb4839-ea84-471e-99b3-b3e14123f778.png', 'https://user-images.githubusercontent.com/75964449/203825171-c9e3d321-b57b-4716-b896-3a1425eb3878.png',], 'オンラインで相手を探してメッセージのやり取りができるSPAアプリです。Vue.jsの学習のアウトプットとして作成しました。トーク履歴に新しく話した人順に表示するようにしたり、getterやsetterを用いたVuexの状態管理で堅牢に管理できるように工夫しました。', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/" target="_blank">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/" target="_blank">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
-                new Portfolio('Recursionガチャ！ガチャ！', ['https://user-images.githubusercontent.com/75964449/203901943-5fa8215c-b68d-4bcd-9a24-c260ea521af8.png', 'https://user-images.githubusercontent.com/75964449/203901962-6206c160-3da8-44f4-b945-92404daded28.png', 'https://user-images.githubusercontent.com/75964449/203901988-f69b2ccf-2e39-4133-afcb-a9570783fd6d.png', 'https://user-images.githubusercontent.com/75964449/203901980-2267a89d-ee91-4b2c-b093-b66cb4d4e297.png', 'https://user-images.githubusercontent.com/75964449/203902046-85163e50-f6f3-4c8c-924c-898926957baf.png',], `Recursionコミュニティ内の初心者用チーム開発(Gitのチームでの使い方をマスターするのが主な目的の開発です)の成果物です。<br>コミュニティに入って間もないユーザーに、メンターやイベント企画者などを紹介するのを目的の一つとして作成しました。おもしろ要素を入れたり、結果をツイートできるようにしてコミュニティ内で<a href="https://twitter.com/hashtag/Recursion%E3%82%AC%E3%83%81%E3%83%A3?src=hashtag_click"  target="_blank">プチバズリ</a>することができました。`, `JavaScript, Bootstrap`, 'https://recursion-teamdev-green.github.io/project/', 'https://github.com/recursion-teamdev-green/project'),
+                new Portfolio('Chat App', ['https://user-images.githubusercontent.com/75964449/207859906-3da597f1-101d-4d5e-98fc-77788a1a1475.png', 'https://user-images.githubusercontent.com/75964449/207859925-719fbaf2-0185-4dda-8a53-dc13cc7f968f.png', 'https://user-images.githubusercontent.com/75964449/207859946-a277def4-0100-467d-8c55-7f0a12eab7fb.png', 'https://user-images.githubusercontent.com/75964449/207859959-2e9eebf5-c832-47a0-a93b-c96806a96e5f.png',], '<p class="mb-0">Talk APIとメッセージのやり取りができるSPAアプリです。</p><p>オブジェクトを連想配列に格納して、特定のデータにアクセスしやすくしたり、オブジェクトに日時データを含めることによって、トーク履歴を新しい順に表示できるようにしました。getterやsetterを用いたVuexの状態管理で堅牢に管理できるようにもしました。</p>', 'Vue CLI, Vue Router, Vuex, Vuetify.<br>外部API: <a href="https://randomuser.me/" target="_blank">RANDOM USER GENERATOR</a>, <a href="https://a3rt.recruit.co.jp/product/talkAPI/" target="_blank">Talk API</a>', 'https://jkai-hw.github.io/chat-app/', 'https://github.com/jKai-Hw/chat-app#readme'),
+                new Portfolio('Recursionガチャ！ガチャ！', ['https://user-images.githubusercontent.com/75964449/203901943-5fa8215c-b68d-4bcd-9a24-c260ea521af8.png', 'https://user-images.githubusercontent.com/75964449/203901962-6206c160-3da8-44f4-b945-92404daded28.png', 'https://user-images.githubusercontent.com/75964449/203901988-f69b2ccf-2e39-4133-afcb-a9570783fd6d.png', 'https://user-images.githubusercontent.com/75964449/203901980-2267a89d-ee91-4b2c-b093-b66cb4d4e297.png', 'https://user-images.githubusercontent.com/75964449/203902046-85163e50-f6f3-4c8c-924c-898926957baf.png',], `
+                <p class="mb-0">コミュニティ内の『Gitのチームでの使い方を学ぶ開発』に参加した際の成果物です。</p>
+                <p class="mb-0">Gitの使い方から、プルリクエストやコンフリクトの対応、Issuesの使い方などチーム開発に必要な基礎知識を実践できました。</p>
+                <p>チームの目標にした<a href="https://twitter.com/hashtag/Recursion%E3%82%AC%E3%83%81%E3%83%A3?src=hashtag_click"  target="_blank">皆に使ってもらう</a>こともツイート機能を付けたり、笑える要素を入れるなどして達成することができ、よい体験となりました。</p>`, `JavaScript, Bootstrap`, 'https://recursion-teamdev-green.github.io/project/', 'https://github.com/recursion-teamdev-green/project'),
                 // new Portfolio('Other portfolios', imgList, description, Technologies, pagesUrl, readmeUrl),
             ],
             otherPFimgList: [
